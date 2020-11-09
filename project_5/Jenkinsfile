@@ -1,0 +1,50 @@
+pipeline {
+    environment {
+        username="weichiet"
+        dockerName="devops-capstone"
+        dockerPath="${username}/${dockerName}:${env.GIT_COMMIT[0..7]}"
+        registryCredential='dockerhub_id'
+        dockerImage=''
+    }
+
+    agent any
+
+    stages {
+
+        stage('Lint HTML and Dockerfile') {
+            steps {
+                sh 'tidy -q -e nginx-hello/*.html'
+                sh 'hadolint Dockerfile'
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                script {
+                  sh 'echo ${dockerPath}'
+                  dockerImage = docker.build("${dockerPath}")
+                }
+            }
+        }
+
+
+        stage('Push Docker Image') {
+            steps {
+                script {
+                  docker.withRegistry( '', registryCredential ) {
+                        dockerImage.push()
+                  }
+                }
+            }
+        }
+
+        stage('Updates k8s Deployment') {
+            steps {
+              withAWS(region:'us-west-2', credentials:'aws_credentials') {
+                  sh "kubectl set image deployment/devops-capstone-deployment devops-capstone=${dockerpath}"
+                }
+            }
+        }
+
+    }
+}
