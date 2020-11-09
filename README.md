@@ -27,7 +27,7 @@ In this course, you’ll learn the process of taking software from source code t
 
   You’ll also learn to manage and make changes to your servers in an automated way, using Ansible, a leading Configuration Management tool.
 
-**Project 3: [Build CI/CD Pipelines, Monitoring & Logging](./project_3)**  
+**Project 3: [Build an Automated CI/CD Pipeline for UdaPeople](./project_3)**  
   * In this project, you’ll demonstrate your Cloud DevOps engineer skills as a new employee at UdaPeople, an innovative new Human Resources company that depends on quick release cycles and a rock solid, high-quality product. You will help the development team deliver value continuously by building an automated CI/CD pipeline. Those new skills will also be put to the test as you set up automated monitoring and alerting to ensure the delivered value stays valuable. Thanks to your new skills and hard work, UdaPeople will have a massive competitive advantage in the PeopleOps marketplace and will surely go on to change the world!  
 
 ### 4. **Microservices at Scale Using Kubernetes**  
