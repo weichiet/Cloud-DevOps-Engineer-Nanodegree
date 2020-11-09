@@ -17,7 +17,7 @@ The project goal is to operationalize this working, machine learning microservic
 * Deploy a container using Kubernetes and make a prediction
 * Upload a complete Github repo with CircleCI to indicate that the code has been tested
 
-The detailed project tasks can be found [here](./Create_the_Project_Environment.md).  
+The detailed project tasks can be found [here](./Detailed_Project_Tasks.md).  
 
 ## Getting Started
 ### Setup the Environment
