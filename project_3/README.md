@@ -253,17 +253,26 @@ This would install the <code>tidy</code> linter in the server.</p>
  ![screenshot-01](./images/screenshot-01.png "screenshot-01")
 
  ![screenshot-02](./images/screenshot-02.png "screenshot-02")
+ 
 2. Install Jenkins On Ubuntu   
+
 3. Set Up Jenkins  
  ![screenshot-03](./images/screenshot-03.png "screenshot-03")
+ 
 4. Install required plugins
  ![screenshot-04](./images/screenshot-04.png "screenshot-04")
+ 
 5. Set up GitHub  
  ![screenshot-05](./images/screenshot-05.png "screenshot-05")
+ 
 6. Set up AWS credentials in Jenkins
+
 7. Set up S3 Bucket  
+
 8. Set up pipeline for AWS  
  ![screenshot-06](./images/screenshot-06.png "screenshot-06")
+ 
 9. Add another stage in pipeline  
  ![screenshot-07](./images/screenshot-07.png "screenshot-07")
+ 
  ![screenshot-08](./images/screenshot-08.png "screenshot-08")
