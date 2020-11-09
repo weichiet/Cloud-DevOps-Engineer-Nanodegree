@@ -1,0 +1,7 @@
+(.devops) ubuntu@ubuntu:~/Workspace/Operationalize-a-Machine-Learning-Microservice-API$ sudo ./run_kubernetes.sh
+Error from server (AlreadyExists): pods "housing-price-predictor" already exists
+NAME                      READY   STATUS    RESTARTS   AGE
+housing-price-predictor   1/1     Running   0          52s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
